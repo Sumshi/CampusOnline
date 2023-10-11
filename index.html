@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>school website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+
+<!--body begins-->
+<body>
+
+
+
+  <!--header section-->
+  <section class="header">
+    <!--adding a nav to contain the logo and links like about, home-->
+    <nav>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <!--creating a div to contain the links-->
+      <div class="nav-links" id="navLinks">
+        <!--close x icon-->
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+<!--menu icon-->
+<svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </nav><!--nav ends here-->
+    <!--creating another div for content in this page-->
+    <div class="text-box">
+      <h1>University of Newyork</h1>
+      <p>This university offers a wide range of undergraduate,
+        postgraduate, and doctoral programs across various 
+        disciplines, <br>providing students with the opportunity
+        to pursue their passions and interests.
+      </p>
+<!--link for visit us is inside the div-->
+      <a href="" class="hero-btn">Visit Us To Know More</a><!--provides a link to the website-->
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!--courses offred section-->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+
+    <!--adding rows to display courses-->
+    <div class="row">
+      <div class="course-col">
+        <h3>Diploma</h3>
+        <p>Discover your path to a rewarding career with our Diploma programs.
+          These specialized courses are designed to provide you with essential skills
+          and knowledge in your chosen field. Whether you're interested in technology,
+          healthcare, or the arts, our Diploma programs offer a practical and 
+          focused education to kickstart your professional journey.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+          <p>Embark on a comprehensive educational experience with our Degree programs.
+            These courses offer an in-depth exploration of your field, combining theory 
+            and practical applications. With a wide range of majors and specializations to choose from,
+            our Degree programs provide you with the foundation for a successful and fulfilling career in your area of interest.
+          </p>
+
+      </div>
+      <div class="course-col">
+        <h3>Masters</h3>
+          <p>Elevate your expertise and career prospects with our Masters programs.
+            These advanced courses are tailored for those seeking a deep understanding of their field and a
+            competitive edge in the job market. With opportunities for research, specialization, 
+            and leadership development, our Masters programs empower you to become a subject matter expert in your chosen discipline.
+          </p>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!--campus section-->
+<section class="campus">
+  <h1>Our Global Campus</h1>
+  <p>Our Global Campus connects students around the world to collaborate,
+    discuss and learn together every day.
+  </p>
+
+   <div class="row">
+    <div class="campus-col">
+      <img src="img/london.png" alt="">
+      <div class="layer">
+        <h3>LONDON</h3>
+      </div>
+    </div>
+        <div class="campus-col">
+      <img src="img/newyork.png" alt="">
+      <div class="layer">
+        <h3>NEW YORK</h3>
+      </div>
+    </div>
+        <div class="campus-col">
+      <img src="img/washington.png" alt="">
+      <div class="layer">
+        <h3>WASHINGTON</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!--javascript code for the clicking, toggling of the menu icon-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+        function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
