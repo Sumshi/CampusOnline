@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>campus online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<!--font awesome link for icons-->
+<link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+</head>
+
+<!--body begins-->
+<body>
+
+
+
+  <!--header section-->
+  <section class="sub-header">
+    <!--adding a nav to contain the logo and links like about, home-->
+    <nav>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <!--creating a div to contain the links-->
+      <div class="nav-links" id="navLinks">
+        <!--close x icon-->
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+<!--menu icon-->
+<svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </nav><!--nav ends here-->
+    <h1>About Us</h1>
+  </section>
+
+  <!--about us content-->
+<section class="about-us">
+<div class="row">
+  <div class="about-col">
+    <h1>Welcome to University Of Newyork</h1>
+    <p>Our mission is to revolutionize education by harnessing the power of online learning. 
+      We envision a world where education knows no boundaries, where every learner 
+      has the opportunity to pursue knowledge, skills, and personal growth, 
+      regardless of their location or circumstances
+    </p>
+    <a href="index.html" class="hero-btn red-btn">EXPLORE OUR COURSES</a>
+  </div>
+
+    <div class="about-col">
+      <img src="img/about.jpg" alt="">
+  </div>
+</div>
+</section>
+
+
+<!--footer section, end of page-->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>
+    With a legacy spanning over a century, University of Newyork
+     has consistently set high standards for academic achievement and research.<br>
+     We take pride in our world-class faculty, cutting-edge research centers, 
+     and an unwavering commitment to the pursuit of knowledge.
+  </p>
+</section>
+
+
+
+
+
+
+  <!--javascript code for the clicking, toggling of the menu icon-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+        function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
