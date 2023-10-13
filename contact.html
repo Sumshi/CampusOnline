@@ -6,7 +6,6 @@
   <title>campus online</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-<!--font awesome link for icons-->
 <!--font awesome link for icons must include this kit to prevent blank icons-->
 <script src="https://kit.fontawesome.com/d7accf2a63.js" crossorigin="anonymous"></script>
 </head>
@@ -38,27 +37,60 @@
 <!--menu icon-->
 <svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </nav><!--nav ends here-->
-    <h1>About Us</h1>
+    <h1>Contact Us</h1>
   </section>
 
-  <!--about us content-->
-<section class="about-us">
-<div class="row">
-  <div class="about-col">
-    <h1><em>Welcome to University Of Newyork</h1></em>
-    <p>Our mission is to revolutionize education by harnessing the power of online learning. 
-      We envision a world where education knows no boundaries, where every learner 
-      has the opportunity to pursue knowledge, skills, and personal growth, 
-      regardless of their location or circumstances
-    </p>
-    <a href="course.html" class="hero-btn red-btn">EXPLORE OUR COURSES</a>
-  </div>
 
-    <div class="about-col">
-      <img src="img/about.jpg" alt="">
+
+
+
+<!--contact form section-->
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <!--home icon-->
+        <i class="fa-solid fa-house"></i>
+        <span>
+          <h5>315 Greenfields Building</h5>
+          <p>Nairobi, Kenya</p>
+        </span>
+      </div>
+
+            <div>
+        <!--phone icon-->
+        <i class="fa-sharp fa-solid fa-phone"></i>
+        <span>
+          <h5>+254 78965432</h5>
+          <p>Monday to Sunday, 8am to 4pm</p>
+        </span>
+      </div>
+
+            <div>
+        <!--email icon-->
+        <i class="fa-solid fa-envelope"></i>
+        <span>
+          <h5>webdev@gmail.com</h5>
+          <p>Our Email</p>
+        </span>
+      </div>
+    </div>
+
+<div class="contact-col">
+
+  <form action="formhandler.php" method="post">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <input type="email" name="email" placeholder="Enter your email address" required>
+    <input type="text" name="subject" placeholder="Enter your subject" required>
+    <textarea rows="8" name="message" placeholder="message" required></textarea>
+      <button type="submit" class="hero-btn red-btn">Send message</button>
+  </form>
+
+    </div>
   </div>
-</div>
 </section>
+
+
 
 
 <!--footer section, end of page-->
@@ -70,8 +102,7 @@
      has consistently set high standards for academic achievement and research.<br>
      We take pride in our world-class faculty, cutting-edge research centers, 
      and an unwavering commitment to the pursuit of knowledge.
-  </p>
-       <br>
+     <br>
      <p>Connect with us on:</p>
   </p>
   <div>
@@ -84,7 +115,12 @@
 </section>
 
 
-
+  <!--contact us content-->
+<section class="location">
+<!--adding google map location 
+go to google map and select embedd map and copy and paste link here-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127640.61268913189!2d36.9065984!3d-1.3139968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1697187566765!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 
 
 
