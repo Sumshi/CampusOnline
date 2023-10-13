@@ -11,7 +11,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'sumaya.tech'; // my domain
+$email_from = 'maya@sumaya.me'; // my domain
 
 $email_subject = 'any message'; // Add a semicolon here
 
