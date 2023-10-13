@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>campus online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<!--font awesome link for icons-->
+<link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+</head>
+
+<!--body begins-->
+<body>
+
+
+
+  <!--header section-->
+  <section class="sub-header">
+    <!--adding a nav to contain the logo and links like about, home-->
+    <nav>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <!--creating a div to contain the links-->
+      <div class="nav-links" id="navLinks">
+        <!--close x icon-->
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+<!--menu icon-->
+<svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </nav><!--nav ends here-->
+    <h1>Our Blogs</h1>
+  </section>
+
+
+
+<!--blog page content-->
+<section class="blog-content">
+<div class="row">
+  <div class="blog-left"><!--left column-->
+    <img src="img/certificate.jpg" alt="">
+    <h2><i>Our Certificate Programs</i></h2>
+    <p> These courses are designed to provide targeted knowledge and training, making them a valuable option for individuals seeking to enhance their expertise or explore new areas of interest without committing to a full degree program. Here's an example of a description for a certificate course:</p>
+    <br>
+    <p>Certificate in Digital Marketing<br>
+      Are you ready to take your career to the next level in the dynamic world of digital marketing? The Certificate in Digital Marketing program at the University of Newyork equips you with the skills and knowledge needed to excel in the ever-evolving digital landscape
+    </p>
+  <p>In this comprehensive certificate program, you'll delve into the core concepts and practices of digital marketing, including:
+  Search Engine Optimization (SEO): Discover the strategies to boost website visibility and organic traffic.
+  Social Media Marketing: Learn to harness the power of social platforms to engage and convert audiences.
+  Content Marketing: Create compelling content that resonates with your target audience.
+  Email Marketing: Master email campaign strategies and automation.
+  Analytics and Reporting: Use data-driven insights to optimize marketing efforts
+</p><br>
+<p><em><strong>Why Choose Our Program</em></strong></p>
+<p>Expert Faculty: Our instructors are seasoned professionals in the field, providing real-world insights and guidance.
+  Flexible Learning: Study at your own pace from anywhere in the world, making it convenient for working professionals.
+  Practical Experience: Apply what you learn to real-world projects and campaigns.
+  Certificate of Completion: Earn a recognized certificate from University of Newyork upon successful program completion.
+</p><br>
+
+<p>Join us on a journey to master the art and science of digital marketing. Start your certificate program today and unlock new career opportunities in the digital age</p>
+
+
+<!-- tells one to leave a comment
+<div class="comment-box">
+<h3>Leave a Comment</h3>
+<form class="comment-form">
+  <input type="text" placeholder="Enter Name">
+   <input type="email" placeholder="Enter Email">
+   <textarea rows="5" placeholder="your comment"></textarea>
+   <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+</form>
+</div> -->
+
+
+</div>
+
+
+    <div class="blog-right"><!--right column-->
+    <h3>Postgraduate</h3>
+    <div>
+      <span>Business Analytics</span>
+      <span>20</span>
+    </div>
+
+        <div>
+      <span>Data Science</span>
+      <span>18</span>
+    </div>
+
+        <div>
+      <span>Computer Science</span>
+      <span>22</span>
+    </div>
+
+        <div>
+      <span>Machine Learning</span>
+      <span>28</span>
+    </div>
+
+        <div>
+      <span>Business Managment</span>
+      <span>30</span>
+    </div>
+
+
+  </div>
+
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!--footer section, end of page-->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>
+    With a legacy spanning over a century, University of Newyork
+     has consistently set high standards for academic achievement and research.<br>
+     We take pride in our world-class faculty, cutting-edge research centers, 
+     and an unwavering commitment to the pursuit of knowledge.
+  </p>
+</section>
+
+
+
+
+
+
+  <!--javascript code for the clicking, toggling of the menu icon-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+        function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
